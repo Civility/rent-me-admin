@@ -1,0 +1,4 @@
+title: Type
+modelClass: RentMe\Rent\Models\Type
+toolbar:
+    buttons: reorder_toolbar

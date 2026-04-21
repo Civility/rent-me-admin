@@ -1,0 +1,9 @@
+<?php if ($record->img): ?>
+<img
+    src="<?= \System\Classes\MediaLibrary::url($record->img) ?>"
+    alt=""
+    style="max-width: 80px; height: auto"
+/>
+<?php else: ?>
+<span>-</span>
+<?php endif; ?>

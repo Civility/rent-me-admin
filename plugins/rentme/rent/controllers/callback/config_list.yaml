@@ -1,0 +1,12 @@
+list: $/rentme/rent/models/callback/columns.yaml
+modelClass: RentMe\Rent\Models\Callback
+title: CallBack
+noRecordsMessage: "backend::lang.list.no_records"
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: "backend::lang.list.search_prompt"
+recordUrl: "rentme/rent/callback/update/:id"

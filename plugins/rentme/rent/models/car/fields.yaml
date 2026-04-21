@@ -1,0 +1,182 @@
+fields:
+    name:
+        label: Name
+        span: left
+        required: true
+        type: text
+    category:
+        label: Category
+        nameFrom: name
+        span: right
+        required: true
+        type: relation
+    location:
+        label: Location
+        nameFrom: name
+        span: right
+        required: 1
+        type: relation
+    type:
+        label: Type
+        nameFrom: name
+        span: right
+        required: true
+        type: relation
+    year:
+        label: Year
+        span: left
+        type: number
+    min_age:
+        label: 'Minimum Age'
+        span: left
+        default: 21
+        type: number
+    is_active:
+        label: 'is active'
+        span: auto
+        default: 1
+        type: switch
+    current_order:
+        label: 'Current Order'
+        span: full
+        type: partial
+        path: ~/plugins/rentme/rent/models/car/_current_order_field.htm
+    description:
+        label: Notes
+        size: huge
+        span: full
+        stretch: 0
+        type: richeditor
+        comment: 'for the manager'
+tabs:
+    fields:
+        seats:
+            label: Seats
+            span: left
+            default: 5
+            type: number
+            tab: Features
+        doors:
+            label: Doors
+            span: right
+            default: 4
+            type: number
+            tab: Features
+        bags:
+            label: Bags
+            span: left
+            default: 2
+            type: number
+            tab: Features
+        transmission:
+            label: Transmission
+            options:
+                A: Automatic
+                M: Manual
+            showSearch: true
+            span: right
+            type: dropdown
+            tab: Features
+        fuel:
+            label: Fuel
+            options:
+                Petrol: Petrol
+                Diesel: Diesel
+                Electric: Electric
+                Hybrid: Hybrid
+                LPG: LPG
+            showSearch: true
+            span: right
+            type: dropdown
+            tab: Features
+        ac:
+            label: 'Air Conditioning'
+            span: auto
+            default: 1
+            type: switch
+            tab: Features
+        horsepower:
+            label: Horsepower
+            span: left
+            type: number
+            tab: Features
+        body:
+            label: 'Body Type'
+            span: right
+            type: dropdown
+            options:
+                Sedan: Sedan
+                SUV: SUV
+                Hatchback: Hatchback
+                Coupe: Coupe
+                Convertible: Convertible
+                Wagon: Wagon
+                Van: Van
+                Truck: Truck
+            tab: Features
+        drive_type:
+            label: 'Drive Type'
+            span: left
+            type: dropdown
+            options:
+                FWD: FWD
+                RWD: RWD
+                AWD: AWD
+                4WD: 4WD
+            tab: Features
+        engine_capacity:
+            label: 'Engine Capacity (L)'
+            span: right
+            type: number
+            step: 0.1
+            tab: Features
+        price_day:
+            label: 'Price per Day (€)'
+            span: left
+            default: 0
+            type: number
+            step: 0.01
+            tab: Pricing
+        deposit:
+            label: 'Deposit (€)'
+            span: right
+            default: 0
+            type: number
+            step: 0.01
+            tab: Pricing
+        excess:
+            label: 'Excess (€)'
+            span: left
+            default: 0
+            type: number
+            step: 0.01
+            tab: Pricing
+        discount:
+            label: 'Discount (€)'
+            span: right
+            default: 0
+            type: number
+            step: 0.01
+            tab: Pricing
+        img:
+            label: 'Featured Image'
+            mode: image
+            span: full
+            type: mediafinder
+            tab: Images
+        images:
+            label: 'Gallery Images'
+            prompt: 'Add image'
+            style: default
+            span: left
+            type: repeater
+            tab: Images
+            form:
+                fields:
+                    path:
+                        label: Image
+                        mode: image
+                        imageWidth: '300'
+                        imageHeight: '250'
+                        span: left
+                        type: mediafinder

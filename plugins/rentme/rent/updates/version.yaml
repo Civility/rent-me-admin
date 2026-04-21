@@ -1,0 +1,20 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table rentme_rent_cars'
+    - ./builder_table_create_rentme_rent_cars.php
+1.0.3:
+    - 'Created table rentme_rent_locations'
+    - builder_table_create_rentme_rent_locations.php
+1.0.4:
+    - 'Created table rentme_rent_type'
+    - builder_table_create_rentme_rent_type.php
+1.0.5:
+    - 'Created table rentme_rent_category'
+    - ./builder_table_create_rentme_rent_category.php
+1.0.6:
+    - 'Created table rentme_rent_order'
+    - ./builder_table_create_rentme_rent_order.php
+1.0.7:
+    - 'Created table rentme_rent_call_back'
+    - builder_table_create_rentme_rent_call_back.php

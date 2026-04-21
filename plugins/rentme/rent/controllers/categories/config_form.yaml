@@ -1,0 +1,11 @@
+name: Categories
+modelClass: RentMe\Rent\Models\Categories
+form: $/rentme/rent/models/categories/fields.yaml
+defaultRedirect: rentme/rent/categories
+create:
+    redirect: 'rentme/rent/categories/update/:id'
+    redirectClose: rentme/rent/categories
+update:
+    redirect: rentme/rent/categories
+    redirectClose: rentme/rent/categories
+preview: {  }

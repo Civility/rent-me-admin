@@ -1,0 +1,35 @@
+plugin:
+    name: 'rentme.rent::lang.plugin.name'
+    description: 'rentme.rent::lang.plugin.description'
+    author: RentMe
+    icon: 'fas icon-car-alt'
+navigation:
+    main-menu-item:
+        label: RentMe
+        url: rentme/rent/cars
+        icon: icon-automobile
+        sideMenu:
+            side-menu-item:
+                label: Cars
+                url: rentme/rent/cars
+                icon: icon-car
+            side-menu-item1:
+                label: categories
+                url: rentme/rent/categories
+                icon: icon-sitemap
+            side-menu-item2:
+                label: locations
+                url: rentme/rent/locations
+                icon: icon-location-arrow
+            side-menu-item3:
+                label: types
+                url: rentme/rent/type
+                icon: icon-bars
+            side-menu-item4:
+                label: Orders
+                url: rentme/rent/orders
+                icon: icon-user-plus
+            side-menu-item5:
+                label: 'Call back'
+                url: rentme/rent/callback
+                icon: icon-envelope-o

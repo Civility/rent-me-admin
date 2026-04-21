@@ -1,0 +1,4 @@
+title: CallBack
+modelClass: RentMe\Rent\Models\CallBack
+toolbar:
+    buttons: reorder_toolbar

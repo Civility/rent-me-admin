@@ -1,0 +1,55 @@
+columns:
+    id:
+        label: ID
+        type: number
+
+    car:
+        label: Car
+        relation: car
+        select: name
+
+    location:
+        label: Pickup Location
+        relation: location
+        select: name
+
+    return_location:
+        label: Return Location
+        relation: return_location
+        select: name
+
+    date_from:
+        label: Date From
+        type: datetime
+
+    date_to:
+        label: Date To
+        type: datetime
+
+    first_name:
+        label: First Name
+        type: text
+
+    last_name:
+        label: Last Name
+        type: text
+
+    email:
+        label: Email
+        type: text
+
+    phone:
+        label: Phone
+        type: text
+
+    dob:
+        label: DOB
+        type: date
+
+    created_at:
+        label: Created
+        type: datetime
+
+    updated_at:
+        label: Updated
+        type: datetime

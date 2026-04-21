@@ -1,0 +1,10 @@
+name: Call_bak
+form: $/rentme/rent/models/callback/fields.yaml
+modelClass: RentMe\Rent\Models\CallBack
+defaultRedirect: rentme/rent/callback
+create:
+    redirect: "rentme/rent/callback/update/:id"
+    redirectClose: rentme/rent/callback
+update:
+    redirect: rentme/rent/callback
+    redirectClose: rentme/rent/callback

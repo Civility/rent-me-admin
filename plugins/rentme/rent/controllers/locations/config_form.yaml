@@ -1,0 +1,10 @@
+name: Locations
+form: $/rentme/rent/models/locations/fields.yaml
+modelClass: RentMe\Rent\Models\Locations
+defaultRedirect: rentme/rent/locations
+create:
+    redirect: 'rentme/rent/locations/update/:id'
+    redirectClose: rentme/rent/locations
+update:
+    redirect: rentme/rent/locations
+    redirectClose: rentme/rent/locations

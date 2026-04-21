@@ -1,0 +1,57 @@
+fields:
+    is_read:
+        label: is_read
+        span: left
+        type: switch
+    status:
+        label: status
+        options:
+            new: new
+            in_progress: in_progress
+            done: done
+            spam: spam
+        showSearch: true
+        span: right
+        type: dropdown
+    name:
+        label: name
+        span: left
+        readOnly: 1
+        type: text
+    email:
+        label: email
+        span: right
+        readOnly: 1
+        type: text
+    phone:
+        label: phone
+        span: left
+        readOnly: 1
+        type: text
+    message:
+        label: message
+        size: ''
+        span: full
+        readOnly: 1
+        type: textarea
+    ip_address:
+        label: ip_address
+        span: auto
+        readOnly: 1
+        type: text
+    user_agent:
+        label: user_agent
+        span: auto
+        readOnly: 1
+        type: text
+    locale:
+        label: locale
+        span: auto
+        readOnly: 1
+        type: text
+    admin_note:
+        label: admin_note
+        size: large
+        mode: tab
+        span: full
+        type: markdown

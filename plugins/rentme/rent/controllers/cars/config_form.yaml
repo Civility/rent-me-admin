@@ -1,0 +1,17 @@
+name: Cars
+form: $/rentme/rent/models/car/fields.yaml
+modelClass: RentMe\Rent\Models\Car
+defaultRedirect: rentme/rent/cars
+create:
+    redirect: "rentme/rent/cars/update/:id"
+    redirectClose: rentme/rent/cars
+update:
+    redirect: rentme/rent/cars
+    redirectClose: rentme/rent/cars
+fields:
+    images:
+        label: "IMAGES"
+        type: attachments
+        mode: image
+        useAttachments: true
+        multiple: true # Позволяет выбрать несколько

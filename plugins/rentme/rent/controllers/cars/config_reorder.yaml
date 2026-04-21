@@ -1,0 +1,4 @@
+title: Cars
+modelClass: RentMe\Rent\Models\Car
+toolbar:
+    buttons: reorder_toolbar

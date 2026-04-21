@@ -1,0 +1,107 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: true
+        sortable: true
+    is_active:
+        label: is_active
+        type: text
+        sortable: true
+    is_rented:
+        label: "Rented"
+        type: switch
+        valueFrom: is_rented
+        readOnly: true
+    category[name]:
+        label: category
+        type: text
+        relation: category
+    type[name]:
+        label: type
+        type: text
+        relation: type
+    location[name]:
+        label: location
+        type: text
+        relation: location
+    name:
+        label: name
+        type: text
+        searchable: true
+    year:
+        label: year
+        type: number
+        sortable: true
+    seats:
+        label: seats
+        type: number
+        sortable: true
+    doors:
+        label: doors
+        type: number
+        sortable: true
+    bags:
+        label: bags
+        type: number
+        sortable: true
+    transmission:
+        label: transmission
+        type: text
+        sortable: true
+    ac:
+        label: ac
+        type: text
+        sortable: true
+    horsepower:
+        label: horsepower
+        type: text
+        sortable: true
+    fuel:
+        label: fuel
+        type: text
+        sortable: true
+    body:
+        label: body
+        type: text
+        sortable: true
+    drive_type:
+        label: drive_type
+        type: text
+        sortable: true
+    engine_capacity:
+        label: engine_capacity
+        type: text
+        sortable: true
+    min_age:
+        label: min_age
+        type: number
+        sortable: true
+    excess:
+        label: Excess (€)
+        type: number
+        sortable: true
+    price_day:
+        label: Price Day (€)
+        type: number
+        sortable: true
+    deposit:
+        label: Deposit (€)
+        type: number
+        sortable: true
+    discount:
+        label: Discount (€)
+        type: number
+        sortable: true
+    created_at:
+        label: created_at
+        type: datetime
+        sortable: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        sortable: true
+    img:
+        label: "IMG"
+        type: partial
+        path: ~/plugins/rentme/rent/models/car/_featured_img_column.htm

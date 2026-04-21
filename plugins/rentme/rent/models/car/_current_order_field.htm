@@ -1,0 +1,40 @@
+<?php if ($model->booking_status === 'rented' && $model->current_order): ?>
+<p>
+    <strong>Status:</strong> Rented now<br />
+    <strong>Order ID:</strong> <?php echo $model->current_order->id; ?><br />
+    <strong>From:</strong> <?php echo $model->current_order->date_from; ?><br />
+    <strong>To:</strong> <?php echo $model->current_order->date_to; ?>
+</p>
+
+<?php elseif ($model->booking_status === 'service' && $model->service_order): ?>
+<p>
+    <strong>Status:</strong> Service buffer<br />
+    <strong>Order ID:</strong> <?php echo $model->service_order->id; ?><br />
+    <strong>Ended at:</strong> <?php echo $model->service_order->date_to; ?><br />
+    <strong>Blocked until:</strong>
+    <?php echo
+    \Carbon\Carbon::parse($model->service_order->date_to)->addMinutes(30)->format('Y-m-d
+    H:i:s'); ?>
+</p>
+
+<?php elseif ($model->booking_status === 'reserved' &&
+$model->next_reservation): ?>
+<p>
+    <strong>Status:</strong> Reserved<br />
+    <strong>Order ID:</strong> <?php echo $model->next_reservation->id; ?><br />
+    <strong>From:</strong> <?php echo $model->next_reservation->date_from; ?><br />
+    <strong>To:</strong> <?php echo $model->next_reservation->date_to; ?>
+</p>
+
+<?php elseif ($model->booking_status === 'has_order' && $model->relevant_order):
+?>
+<p>
+    <strong>Status:</strong> Has order<br />
+    <strong>Order ID:</strong> <?php echo $model->relevant_order->id; ?><br />
+    <strong>From:</strong> <?php echo $model->relevant_order->date_from; ?><br />
+    <strong>To:</strong> <?php echo $model->relevant_order->date_to; ?>
+</p>
+
+<?php else: ?>
+<p><strong>Status:</strong> Available</p>
+<?php endif; ?>

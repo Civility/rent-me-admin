@@ -1,0 +1,16 @@
+<?php $warning = $model->car_availability_warning_data; ?> <?php if
+(empty($warning['hasConflict'])): ?>
+<div class="callout callout-success no-subheader">
+    <div class="content">Selected car is available for the chosen period.</div>
+</div>
+<?php else: ?>
+<div class="callout callout-warning no-subheader">
+    <div class="content">
+        Car is already reserved.<br />
+        Order ID: <?= e($warning['order']->id) ?><br />
+        Reserved from: <?= e($warning['order']->date_from) ?><br />
+        Reserved to: <?= e($warning['order']->date_to) ?><br />
+        Blocked until: <?= e($warning['blockedUntil']->format('d.m.Y H:i')) ?>
+    </div>
+</div>
+<?php endif; ?>

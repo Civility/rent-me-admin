@@ -1,0 +1,4 @@
+title: Categories
+modelClass: RentMe\Rent\Models\Categories
+toolbar:
+    buttons: reorder_toolbar

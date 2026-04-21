@@ -1,0 +1,10 @@
+name: Type
+form: $/rentme/rent/models/type/fields.yaml
+modelClass: RentMe\Rent\Models\Type
+defaultRedirect: rentme/rent/type
+create:
+    redirect: 'rentme/rent/type/update/:id'
+    redirectClose: rentme/rent/type
+update:
+    redirect: rentme/rent/type
+    redirectClose: rentme/rent/type

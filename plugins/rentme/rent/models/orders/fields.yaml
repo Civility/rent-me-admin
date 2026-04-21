@@ -1,0 +1,68 @@
+fields:
+    car:
+        label: car
+        nameFrom: name
+        span: auto
+        type: relation
+    booking_warning:
+        span: left
+        path: ~/plugins/rentme/rent/models/orders/_booking_warning.htm
+        type: hint
+    location:
+        label: 'Pickup Location'
+        nameFrom: name
+        descriptionFrom: description
+        span: right
+        type: relation
+    return_location:
+        label: 'return location'
+        nameFrom: name
+        descriptionFrom: description
+        span: right
+        type: relation
+    date_from:
+        label: rent_start
+        mode: datetime
+        format: 'd.m.Y H:i'
+        span: left
+        type: datepicker
+    date_to:
+        label: date_to
+        mode: datetime
+        format: 'd.m.Y H:i'
+        span: left
+        type: datepicker
+tabs:
+    fields:
+        first_name:
+            label: first_name
+            span: auto
+            readOnly: 0
+            type: text
+            tab: USER
+        last_name:
+            label: last_name
+            span: auto
+            readOnly: 0
+            type: text
+            tab: USER
+        email:
+            label: email
+            span: auto
+            readOnly: 0
+            type: text
+            tab: USER
+        phone:
+            label: phone
+            span: auto
+            readOnly: 0
+            type: text
+            tab: USER
+        dob:
+            label: dob
+            mode: date
+            format: d.m.Y
+            span: auto
+            readOnly: 0
+            type: datepicker
+            tab: USER

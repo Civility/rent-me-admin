@@ -1,0 +1,15 @@
+name: Orders
+form: $/rentme/rent/models/orders/fields.yaml
+modelClass: RentMe\Rent\Models\Orders
+defaultRedirect: rentme/rent/orders
+create:
+    redirect: "rentme/rent/orders/update/:id"
+    redirectClose: rentme/rent/orders
+update:
+    redirect: rentme/rent/orders
+    redirectClose: rentme/rent/orders
+car_id:
+    label: "Car"
+    type: relation
+    nameFrom: name
+    required: true
