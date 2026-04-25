@@ -14,7 +14,6 @@ class Car extends Model
 
     public $belongsTo = [
         'category' => ['RentMe\Rent\Models\Categories'],
-        'location' => ['RentMe\Rent\Models\Locations'],
         'type' => ['RentMe\Rent\Models\Type'],
     ];
 

@@ -21,10 +21,6 @@ columns:
         label: type
         type: text
         relation: type
-    location[name]:
-        label: location
-        type: text
-        relation: location
     name:
         label: name
         type: text

@@ -10,12 +10,6 @@ fields:
         span: right
         required: true
         type: relation
-    location:
-        label: Location
-        nameFrom: name
-        span: right
-        required: 1
-        type: relation
     type:
         label: Type
         nameFrom: name
